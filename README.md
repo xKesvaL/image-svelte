@@ -91,19 +91,23 @@ By default, the component simply renders an `img` tag with the `src` attribute p
 ```svelte
 <script>
   import Image from '@kesval/image-svelte'
+
+  let error = false;
 </script>
 
 <Image let:error let:alt let:src>
   {#if error}
     placeholder error image
   {:else}
-    <img src={src} alt={alt} srcset={srcSet} />
-  {/if
+    <img src={src} alt={alt} srcset={srcSet} on:error={() => {
+      error = true;
+    }} />
+  {/if}
 </Image>
 ```
 
 The component will pass the following props to the parent:
-`src`, `srcSet`, `alt`, `error`, `loading`, `figcaption`
+`srcSet`
 
 ## Svelte Starter
 

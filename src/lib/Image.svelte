@@ -14,7 +14,6 @@
 	export let figureClasses: string = '';
 	export let imgClasses: string = '';
 
-	let error = false;
 	let fileName: string;
 	$: if (src) {
 		fileName = src.split('.')[0];
@@ -54,17 +53,9 @@
 	});
 </script>
 
-<slot {src} {srcSet} {alt} {error} {loading}>
+<slot {srcSet}>
 	<figure class={figureClasses}>
-		<img
-			class={imgClasses}
-			srcset={srcSet}
-			{src}
-			{alt}
-			{loading}
-			decoding="async"
-			on:error={() => (error = true)}
-		/>
+		<img class={imgClasses} srcset={srcSet} {src} {alt} {loading} decoding="async" />
 
 		{#if figcaption}
 			<p>{figcaption}</p>
