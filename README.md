@@ -15,7 +15,7 @@
 
 ## Usage
 
-To use this package it is very important to have installed the following packages: `@kesval/image` and to have these scripts in your `package.json`:
+To use this package it is very important to have installed the following packages: [`@kesval/image`](https://www.npmjs.com/package/@kesval/image) and to have these scripts in your `package.json`:
 
 ```json
 {
