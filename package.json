@@ -1,6 +1,7 @@
 {
 	"name": "@kesval/image-svelte",
-	"version": "0.1.1",
+	"version": "0.1.2",
+	"description": "Svelte component for image optimization",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -17,6 +18,19 @@
 			"svelte": "./dist/index.js"
 		}
 	},
+	"repository": "https://github.com/xKesvaL/image-svelte",
+	"homepage": "https://github.com/xKesvaL/image-svelte",
+	"keywords": [
+		"svelte",
+		"image",
+		"optimization",
+		"component"
+		"webp",
+		"avif",
+		"jpeg",
+		"png",
+		"svg"
+	],
 	"files": [
 		"dist",
 		"!dist/**/*.test.*",
