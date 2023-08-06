@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { dev } from '$app/environment';
+	import { DEV } from 'esm-env';
 	import { onMount } from 'svelte';
 
 	export let src: string;
@@ -21,7 +21,7 @@
 	}
 
 	function buildSrcset() {
-		if (dev) return;
+		if (DEV) return;
 		if (src?.split('.')[1] === 'svg') return;
 
 		let srcset = '';
