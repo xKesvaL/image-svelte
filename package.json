@@ -1,6 +1,6 @@
 {
 	"name": "@kesval/image-svelte",
-	"version": "0.1.5",
+	"version": "0.2.0",
 	"description": "Svelte component for image optimization",
 	"scripts": {
 		"dev": "vite dev",
@@ -37,7 +37,7 @@
 		"!dist/**/*.spec.*"
 	],
 	"peerDependencies": {
-		"@kesval/image": "0.1.4",
+		"@kesval/image": "^0.2.0",
 		"svelte": "^4.0.0"
 	},
 	"devDependencies": {
